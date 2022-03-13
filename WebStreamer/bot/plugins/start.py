@@ -6,8 +6,8 @@ from pyrogram.types import Message
 from WebStreamer.bot import StreamBot
 
 
-@StreamBot.on_message(filters.command(["start", "help"]))
+@StreamBot.on_message(filters.command(["start"]))
 async def start(_, m: Message):
     await m.reply(
-        f'Hi {m.from_user.mention(style="md")}, Send me a file to get an instant stream link.'
+        f'Hello send or send any video, document, file, audio we will upload on our website and give you the link\n Powered By Jdisk.in'
     )
